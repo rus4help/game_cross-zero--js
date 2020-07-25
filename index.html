@@ -46,9 +46,6 @@
 
         document.onkeypress = function (event) {
             arrayEmpty.push(event.key)
-            console.log(event)
-            console.log(arrayEmpty.join(''));
-
         }
 
         var arraySpan = [
@@ -70,8 +67,8 @@
                 let intKey = event.target.dataset.value
                 arraySpan[intKey] = 'o'
                 count++
-                console.log(count);
                 spanTrue = false
+
                 if ((arraySpan[0] === 'o' && arraySpan[1] === 'o' && arraySpan[2] === 'o') || (arraySpan[3] === 'o' && arraySpan[4] === 'o' && arraySpan[5] === 'o') || (arraySpan[6] === 'o' && arraySpan[7] === 'o' && arraySpan[8] === 'o') || (arraySpan[0] === 'o' && arraySpan[3] === 'o' && arraySpan[6] === 'o') || (arraySpan[1] === 'o' && arraySpan[4] === 'o' && arraySpan[7] === 'o') || (arraySpan[2] === 'o' && arraySpan[5] === 'o' && arraySpan[8] === 'o') || (arraySpan[0] === 'o' && arraySpan[4] === 'o' && arraySpan[8] === 'o') || (arraySpan[2] === 'o' && arraySpan[4] === 'o' && arraySpan[6] === 'o')) {
                     alert('Нолики победили!')
                     setTimeout(() => {
@@ -88,8 +85,8 @@
                 let intKey = event.target.dataset.value
                 arraySpan[intKey] = 'x'
                 count++
-                console.log(count);
                 spanTrue = true
+
                 if ((arraySpan[0] === 'x' && arraySpan[1] === 'x' && arraySpan[2] === 'x') || (arraySpan[3] === 'x' && arraySpan[4] === 'x' && arraySpan[5] === 'x') || (arraySpan[6] === 'x' && arraySpan[7] === 'x' && arraySpan[8] === 'x') || (arraySpan[0] === 'x' && arraySpan[3] === 'x' && arraySpan[6] === 'x') || (arraySpan[1] === 'x' && arraySpan[4] === 'x' && arraySpan[7] === 'x') || (arraySpan[2] === 'x' && arraySpan[5] === 'x' && arraySpan[8] === 'x') || (arraySpan[0] === 'x' && arraySpan[4] === 'x' && arraySpan[8] === 'x') || (arraySpan[2] === 'x' && arraySpan[4] === 'x' && arraySpan[6] === 'x')) {
                     alert('Крестики победили!')
                     setTimeout(() => {
